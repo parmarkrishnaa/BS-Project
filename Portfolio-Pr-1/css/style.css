@@ -1,0 +1,11 @@
+img{
+    display: block;
+}
+
+header .img img{
+    border: 8px solid #ffffff26 !important;
+}
+
+header .icons ul li a{
+    border: 3px solid #ffffff26 !important;
+}
