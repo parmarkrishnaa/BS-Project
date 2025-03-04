@@ -1,6 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --theme-bg-black: #040b14;
+    --theme-bg-blue:#149DDD;
+    --theme-white:#ffff;
+    --theme-light:#292f37;
+}
+
 img{
     display: block;
 }
+
+/* header section start */
 
 header .img img{
     border: 8px solid #ffffff26 !important;
@@ -8,4 +23,42 @@ header .img img{
 
 header .icons ul li a{
     border: 3px solid #ffffff26 !important;
+    transition: all .3s ease-in-out;
 }
+
+header .icons ul li a:hover{
+    background-color: var(--theme-bg-blue);
+}
+
+header nav ul li a{
+    transition: all .3s ease-in-out;
+}
+
+header nav ul li:hover{
+    background-color: #ffffff15 ;
+}
+
+header nav ul li a:hover{
+    color: #ffffff !important;
+}
+
+header nav ul li a:hover i{
+    color: #149ddd;
+}
+
+/* header section end */
+
+/* main section start */
+main{
+    width: calc(100% - 300px);
+    margin-left: auto;
+}
+main .hero .hero-img{
+    background-image: url(../images/hero-bg.jpg);
+    background-color: #040b144c;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: color-burn;
+}
+
+/* main section end */
