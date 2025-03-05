@@ -12,6 +12,7 @@
 }
 
 img{
+    max-width: 100%;
     display: block;
 }
 
@@ -49,11 +50,17 @@ header nav ul li a:hover i{
 /* header section end */
 
 /* main section start */
+
 main{
     width: calc(100% - 300px);
     margin-left: auto;
+
 }
-main .hero .hero-img{
+/* main section end */
+
+/* hero section start  */
+
+.hero .hero-img{
     background-image: url(../images/hero-bg.jpg);
     background-color: #040b144c;
     background-size: cover;
@@ -61,4 +68,18 @@ main .hero .hero-img{
     background-blend-mode: color-burn;
 }
 
-/* main section end */
+/* hero section end  */
+
+/* about section start */
+
+.about .about-title h2::before{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: var(--theme-bg-blue);
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+/* about section end */
