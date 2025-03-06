@@ -16,6 +16,19 @@ img{
     display: block;
 }
 
+.about .about-title h2::before,
+.skills .skills-title h2::before,
+.resume .resume-title h2::before{
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: var(--theme-bg-blue);
+    display: block;
+    position: absolute;
+    bottom: 0;
+}
+
+
 /* header section start */
 
 header .img img{
@@ -70,16 +83,20 @@ main{
 
 /* hero section end  */
 
-/* about section start */
+/* resume section start */
 
-.about .about-title h2::before{
+.resume .resume-body::before{
     content: '';
-    width: 60px;
-    height: 3px;
-    background-color: var(--theme-bg-blue);
-    display: block;
+    width: 8px;
+    border: 2px solid var(--theme-bg-blue);
+    background-color: var(--theme-white);
+    border-radius: 50%;
+    border-color: #149ddd;
     position: absolute;
-    bottom: 0;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    transform: translate(-50%);
 }
 
-/* about section end */
+/* resume section end */
