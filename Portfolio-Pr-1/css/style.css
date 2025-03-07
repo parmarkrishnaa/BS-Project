@@ -18,7 +18,8 @@ img{
 
 .about .about-title h2::before,
 .skills .skills-title h2::before,
-.resume .resume-title h2::before{
+.resume .resume-title h2::before,
+.portfolio .portfolio-title h2::before{
     content: '';
     width: 60px;
     height: 3px;
@@ -96,7 +97,7 @@ main{
     top: 0;
     left: 0;
     padding: 8px;
-    transform: translate(-50%);
+    transform: translate(-55%);
 }
 
 /* resume section end */
