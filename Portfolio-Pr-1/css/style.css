@@ -11,6 +11,11 @@
     --theme-light:#292f37;
 }
 
+a{
+    text-decoration: none;
+    display: block;
+}
+
 img{
     max-width: 100%;
     display: block;
@@ -19,7 +24,8 @@ img{
 .about .about-title h2::before,
 .skills .skills-title h2::before,
 .resume .resume-title h2::before,
-.portfolio .portfolio-title h2::before{
+.portfolio .portfolio-title h2::before,
+.services .services-title h2::before{
     content: '';
     width: 60px;
     height: 3px;
@@ -29,7 +35,6 @@ img{
     bottom: 0;
 }
 
-
 /* header section start */
 
 header .img img{
@@ -37,7 +42,9 @@ header .img img{
 }
 
 header .icons ul li a{
-    border: 3px solid #ffffff26 !important;
+    padding: 5px 10px;
+    background-color: var(--theme-light);
+    border-radius: 50%;
     transition: all .3s ease-in-out;
 }
 
@@ -50,7 +57,7 @@ header nav ul li a{
 }
 
 header nav ul li:hover{
-    background-color: #ffffff15 ;
+    background-color: #ffffff05 ;
 }
 
 header nav ul li a:hover{
@@ -58,6 +65,15 @@ header nav ul li a:hover{
 }
 
 header nav ul li a:hover i{
+    color: #149ddd;
+}
+
+.nav-pills .nav-link.active{
+    background-color: #ffffff09;
+    color: white !important;
+}
+
+.nav-pills .nav-link.active i{
     color: #149ddd;
 }
 
@@ -70,6 +86,7 @@ main{
     margin-left: auto;
 
 }
+
 /* main section end */
 
 /* hero section start  */
@@ -101,3 +118,59 @@ main{
 }
 
 /* resume section end */
+
+/* portfolio section start */
+
+.portfolio .portfolio-content .portfolio-img{
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.portfolio .portfolio-content .portfolio-img:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio .portfolio-content .portfolio-img-overlay{
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.portfolio .portfolio-content .portfolio-img-overlay:hover{
+    opacity: 1;
+}
+
+/* portfolio section end */
+
+/* services section start  */
+
+.services .services-count .count i{
+    width: 60px;
+    height: 60px;
+    background: var(--theme-bg-blue);
+    border-radius: 50%;
+    font-size: 24px;
+    color: var(--theme-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    padding: 15px;
+    transition: 0.5s;
+}
+
+.services .services-count .count:hover i{
+    background-color: var(--theme-white);
+    border: 1px solid var(--theme-bg-blue);
+    color: var(--theme-bg-blue);
+}
+
+.services .services-count .count .services-count-content h4 a{
+    text-decoration: none;
+    color: var(--theme-bg-black);
+    transition: all .3s ease-in-out;
+}
+
+.services .services-count .count:hover .services-count-content h4 a{
+    color: var(--theme-bg-blue);
+}
+/* services section end */

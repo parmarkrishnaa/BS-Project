@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./bootstrap-icons-1.11.3/bootstrap-icons.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
-    " type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css "type="text/css">
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 
@@ -22,64 +21,62 @@
         <div class="icons">
             <ul class="navbar list-unstyled d-flex justify-content-center text-white">
                 <li class="nav-item">
-                    <a href="#" class="nav-link me-2 rounded-circle border px-2 py-1"><i
-                            class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="nav-link me-2"><i class="bi bi-twitter-x"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link me-2 rounded-circle border px-2 py-1"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="nav-link me-2"><i class="bi bi-facebook"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link me-2 rounded-circle border px-2 py-1"><i
-                            class="bi bi-instagram"></i></a>
+                    <a href="#" class="nav-link me-2"><i class="bi bi-instagram"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link me-2 rounded-circle border px-2 py-1"><i class="bi bi-skype"></i></a>
+                    <a href="#" class="nav-link me-2"><i class="bi bi-skype"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link me-2 rounded-circle border px-2 py-1"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="nav-link me-2"><i class="bi bi-linkedin"></i></a>
                 </li>
             </ul>
         </div>
-        <nav class="menu ms-3">
-            <ul class="navbar-nav list-unstyled text-white me-3">
+        <nav class="menu ms-3" id="navbar-example2">
+            <ul class="navbar-nav nav-pills list-unstyled text-white me-3">
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link text-white-50">
+                    <a href="#hero" class="nav-link text-white-50">
                         <i class="bi bi-house ms-4 me-1"></i>
                         Home
                     </a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link text-white-50">
+                    <a href="#about" class="nav-link text-white-50">
                         <i class="bi bi-person ms-4 me-1"></i>
                         About
                     </a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link text-white-50">
+                    <a href="#resume" class="nav-link text-white-50">
                         <i class="bi bi-file-earmark-text ms-4 me-1"></i>
                         Resume
                     </a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link text-white-50">
+                    <a href="#portfolio" class="nav-link text-white-50">
                         <i class="bi bi-images ms-4 me-1"></i>
                         Portfolio
                     </a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link text-white-50">
+                    <a href="#services" class="nav-link text-white-50">
                         <i class="bi bi-hdd-stack ms-4 me-1"></i>
                         Services
                     </a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link text-white-50">
+                    <a href="#dropdown" class="nav-link text-white-50">
                         <i class="bi bi-menu-button ms-4 me-1"></i>
                         Dropdown
                     </a>
                 </li>
                 <li class="nav-item mb-3">
-                    <a href="#" class="nav-link text-white-50">
+                    <a href="#contact" class="nav-link text-white-50">
                         <i class="bi bi-envelope ms-4 me-1"></i>
                         Contact
                     </a>
@@ -88,10 +85,10 @@
         </nav>
     </header>
 
-    <main>
+    <main  data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
         <!-- hero section start  -->
 
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="hero-img vh-100">
                 <div class="hero-content h-100 d-flex align-items-center">
                     <div class="text-white ms-5">
@@ -107,7 +104,7 @@
 
         <!-- about section start  -->
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="row mt-5 py-5">
                     <div class="col-md-12">
@@ -333,7 +330,7 @@
 
         <!-- resume section start  -->
 
-        <section class="resume">
+        <section class="resume" id="resume">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -429,7 +426,7 @@
 
         <!-- portfolio section start -->
 
-        <section class="portfolio" style="background-color: #f4fafd;">
+        <section class="portfolio py-5" id="portfolio" style="background-color: #f4fafd;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -469,7 +466,7 @@
                                         <div
                                             class="portfolio-icons d-flex align-items-center position-absolute top-50 start-50 translate-middle">
                                             <a href="" role="button" class="fs-3 me-2 text-white" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModalApp">
+                                                data-bs-target="#exampleModal">
                                                 <i class="bi bi-zoom-in text-white fs-4"></i>
                                             </a>
                                             <a href="#" class="text-white fs-2">
@@ -488,6 +485,214 @@
         </section>
 
         <!-- portfolio section end -->
+
+        <!-- services section start -->
+
+        <section class="services py-5" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="services-title mb-5">
+                            <h2 class="display-6 fw-medium position-relative pb-3 mb-3">Services</h2>
+                            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui
+                                impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="services-count">
+                                <div class="row mt-5 mb-4">
+                                    <div class="col-md-4">
+                                        <div class="count d-flex">
+                                            <i class="bi bi-briefcase"></i>
+                                            <div class="services-count-content ms-3 mb-3 fs-6">
+                                                <h4 class="m-0">
+                                                    <a href="#">Lorem Ipsum</a>
+                                                </h4>
+                                                <p class="m-0 mt-2" style="line-height: 24px; font-size: 14px;">
+                                                    <a href="#" class="text-decoration-none text-black">Voluptatum
+                                                        deleniti atque corrupti quos dolores et quas molestias excepturi
+                                                        sint occaecati cupiditate non provident</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="count d-flex">
+                                            <i class="bi bi-card-checklist"></i>
+                                            <div class="services-count-content ms-3 mb-3 fs-6">
+                                                <h4 class="m-0">
+                                                    <a href="#">Dolor Sitema</a>
+                                                </h4>
+                                                <p class="m-0 mt-2" style="line-height: 24px; font-size: 14px;">
+                                                    <a href="#" class="text-decoration-none text-black">Minim veniam,
+                                                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                                        commodo consequat tarad limino ata</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="count d-flex">
+                                            <i class="bi bi-bar-chart"></i>
+                                            <div class="services-count-content ms-3 mb-3 fs-6">
+                                                <h4 class="m-0">
+                                                    <a href="#">Sed ut perspiciatis</a>
+                                                </h4>
+                                                <p class="m-0 mt-2" style="line-height: 24px; font-size: 14px;">
+                                                    <a href="#" class="text-decoration-none text-black">Duis aute irure
+                                                        dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                                        fugiat nulla pariatur</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="count d-flex">
+                                            <i class="bi bi-binoculars "></i>
+                                            <div class="services-count-content ms-3 mb-3 fs-6">
+                                                <h4 class="m-0">
+                                                    <a href="#">Magni Dolores</a>
+                                                </h4>
+                                                <p class="m-0 mt-2" style="line-height: 24px; font-size: 14px;">
+                                                    <a href="#" class="text-decoration-none text-black">Excepteur sint
+                                                        occaecat cupidatat non proident, sunt in culpa qui officia
+                                                        deserunt mollit anim id est laborum</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="count d-flex">
+                                            <i class="bi bi-sun"></i>
+                                            <div class="services-count-content ms-3 mb-3 fs-6">
+                                                <h4 class="m-0">
+                                                    <a href="#">Nemo Enim</a>
+                                                </h4>
+                                                <p class="m-0 mt-2" style="line-height: 24px; font-size: 14px;">
+                                                    <a href="#" class="text-decoration-none text-black">At vero eos et
+                                                        accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                                        praesentium voluptatum deleniti atque</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="count d-flex">
+                                            <i class="bi bi-calendar4-week"></i>
+                                            <div class="services-count-content ms-3 mb-3 fs-6">
+                                                <h4 class="m-0">
+                                                    <a href="#">Eiusmod Tempor</a>
+                                                </h4>
+                                                <p class="m-0 mt-2" style="line-height: 24px; font-size: 14px;">
+                                                    <a href="#" class="text-decoration-none text-black">Et harum quidem
+                                                        rerum facilis est et expedita distinctio. Nam libero tempore,
+                                                        cum soluta nobis est eligendi</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- services section end -->
+
+        <!-- testimonial start  -->
+
+        <section class="testimonial">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="testimonial-title">
+                        <h2 class="position-relative pb-2 mb-4">Testimonials</h2>
+                        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                    </div>
+                    <div class="row pt-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="test-content rounded-3 bg-white shadow position-relative">
+                                <p class="fs-6"><i class="bi bi-quote quote-icon-left fs-5" style="color: #149ddd;"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sine. <i class="bi bi-quote quote-icon-right fs-5" style="color: #149ddd;"></i></p>
+                                <span class="position-absolute top-100 start-50 translate-middle"><i class="bi bi-caret-down-fill fs-1 text-white"></i></span>
+                            </div>
+                            <div class="d-block mt-4">
+                                <div class="col-4 mx-auto">
+                                    <img class="img-fluid rounded-circle" src="./images/testimonials-1.jpg" alt="">
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h5>Sual Goodman</h5>
+                                    <span class="text-muted">Store Owner</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="test-content rounded-3 bg-white shadow position-relative">
+                                <p class="fs-6"><i class="bi bi-quote quote-icon-left fs-5" style="color: #149ddd;"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sine. <i class="bi bi-quote quote-icon-right fs-5" style="color: #149ddd;"></i></p>
+                                <span class="position-absolute top-100 start-50 translate-middle"><i class="bi bi-caret-down-fill fs-1 text-white"></i></span>
+                            </div>
+                            <div class="d-block mt-4">
+                                <div class="col-4 mx-auto">
+                                    <img class="img-fluid rounded-circle" src="./images/testimonials-2.jpg" alt="">
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h5>Sara Wilsson</h5>
+                                    <span class="text-muted">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="test-content rounded-3 bg-white shadow position-relative">
+                                <p class="fs-6"><i class="bi bi-quote quote-icon-left fs-5" style="color: #149ddd;"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sine. <i class="bi bi-quote quote-icon-right fs-5" style="color: #149ddd;"></i></p>
+                                <span class="position-absolute top-100 start-50 translate-middle"><i class="bi bi-caret-down-fill fs-1 text-white"></i></span>
+                            </div>
+                            <div class="d-block mt-4">
+                                <div class="col-4 mx-auto">
+                                    <img class="img-fluid rounded-circle" src="./images/testimonials-3.jpg" alt="">
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h5>Jena Karlis</h5>
+                                    <span class="text-muted">CEO & Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="test-content rounded-3 bg-white shadow position-relative">
+                                <p class="fs-6"><i class="bi bi-quote quote-icon-left fs-5" style="color: #149ddd;"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sine. <i class="bi bi-quote quote-icon-right fs-5" style="color: #149ddd;"></i></p>
+                                <span class="position-absolute top-100 start-50 translate-middle"><i class="bi bi-caret-down-fill fs-1 text-white"></i></span>
+                            </div>
+                            <div class="d-block mt-4">
+                                <div class="col-4 mx-auto">
+                                    <img class="img-fluid rounded-circle" src="./images/testimonials-4.jpg" alt="">
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h5>Matt Brandon</h5>
+                                    <span class="text-muted">Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="test-content rounded-3 bg-white shadow position-relative">
+                                <p class="fs-6"><i class="bi bi-quote quote-icon-left fs-5" style="color: #149ddd;"></i> Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sine. <i class="bi bi-quote quote-icon-right fs-5" style="color: #149ddd;"></i></p>
+                                <span class="position-absolute top-100 start-50 translate-middle"><i class="bi bi-caret-down-fill fs-1 text-white"></i></span>
+                            </div>
+                            <div class="d-block mt-4">
+                                <div class="col-4 mx-auto">
+                                    <img class="img-fluid rounded-circle" src="./images/testimonials-5.jpg" alt="">
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h5>John Larson</h5>
+                                    <span class="text-muted">CEO & Founder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  -->
+
+        <!-- testimonial end  -->
+
     </main>
 
     <footer>
@@ -496,22 +701,24 @@
 
     <!-- App Modal  -->
 
-    <div class="modal fade" id="exampleModalApp">
-        <div class="modal-dialog model-fullscreen">
-            <div class="modal-content bg-transparent">
-                <div class="modal-header border-0 z-2">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal" id="exampleModal">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-transparent position-relative">
+                <div class="modal-header border-0">
+                    <button type="button"
+                        class="btn-close btn-close-white bg-dark-subtle position-absolute me-5 mt-2 z-3 top-0 end-0"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner vh-100 mb-0">
-                        <div class="carousel-item active ">
-                            <img src="./images/app-1.jpg" class="d-block w-100 h-100 mx-auto" alt="...">
+                    <div class="carousel-inner vh-90 pt-5">
+                        <div class="carousel-item active">
+                            <img src="./images/app-1.jpg" class=" object-fit-contain w-50 h-100 mx-auto" alt="...">
                         </div>
-                        <div class="carousel-item ">
-                            <img src="./images/app-2.jpg" class="d-block w-100 h-100 mx-auto" alt="...">
+                        <div class="carousel-item">
+                            <img src="./images/app-2.jpg" class=" object-fit-contain w-50 h-100 mx-auto" alt="...">
                         </div>
-                        <div class="carousel-item ">
-                            <img src="./images/app-3.jpg" class="d-block w-100 h-100 mx-auto" alt="...">
+                        <div class="carousel-item">
+                            <img src="./images/app-3.jpg" class=" object-fit-contain w-50 h-100 mx-auto" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
