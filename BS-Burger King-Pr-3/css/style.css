@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    background-color: #f8f1e7;
+}
+
+/* banner start */
+
+.banner h2, .offer .card .card-body .card-title{
+    color: #502314;
+}
+
+.banner .banner-content .delivery a{
+    transition: all 0.5s ease-in-out;
+}
+
+.banner .banner-content .delivery:hover a{
+    background-color: rgba(107, 106, 106, 0.151);
+}
+
+/* banner end */
+
+/* offer section start */
+
+.offer .card .card-body .btn a{
+    border-color: #502314 !important;
+    color: #502314 !important;
+}
+
+.offer .card .card-body .btn a{
+    transition: all 0.5s ease-in-out;
+}
+
+.offer .card .card-body .btn a:hover{
+    background-color: rgba(107, 106, 106, 0.151);
+}
+
+/* offer section end */
+
+/* app section start */
+
+.app-info .app-info-content h2, .app-info .app-info-content p{
+    color: #502314;
+}
+
+/* app section end */
